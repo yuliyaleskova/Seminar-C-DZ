@@ -40,18 +40,32 @@
 // -3 -> нет
 // 7 -> нет
 
- Console.WriteLine("Введите  число ->");
- int num = Convert.ToInt32(Console.ReadLine());
- int result = num % 2;
+//  Console.WriteLine("Введите  число ->");
+//  int num = Convert.ToInt32(Console.ReadLine());
+//  int result = num % 2;
 
-if (result == 0) 
-{
-    Console.WriteLine("Число является чётным");
-}
+// if (result == 0) 
+// {
+//     Console.WriteLine("Число является чётным");
+// }
 
-else 
+// else 
+// {
+//     Console.WriteLine("Число является нечётным");
+// }
+
+
+// Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+// 5 -> 2, 4
+// 8 -> 2, 4, 6, 8
+
+Console.WriteLine("Введите число N ->");
+int N = Convert.ToInt32(Console.ReadLine());
+int current = 2;
+while (current<= N)
 {
-    Console.WriteLine("Число является нечётным");
+System.Console.WriteLine(current);
+current=current+2;
 }
 
 
