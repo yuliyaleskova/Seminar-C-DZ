@@ -76,6 +76,42 @@
 // System.Console.WriteLine (FindNum(index));
 
 
+// Напишите программу, которая принимает на вход два числа и проверяет, является ли одно число квадратом другого.
 
+// System.Console.Write("Введите 1 число ->");
+// int num1 = Convert.ToInt32(Console.ReadLine());
+// System.Console.Write("Введите 2 число ->");
+// int num2 = Convert.ToInt32(Console.ReadLine());
+// int num=0;
+
+// bool SquareNum(int num)
+// {
+//     if (num1 == num2 * num2) return true;
+//     else return false; 
+// }
+// System.Console.WriteLine(SquareNum(num));
+
+
+System.Console.Write("Введите 1 число ->");
+int num1 = Convert.ToInt32(Console.ReadLine());
+System.Console.Write("Введите 2 число ->");
+int num2 = Convert.ToInt32(Console.ReadLine());
+
+void SquareNum(int num1,int num2)
+{
+    if (num1==num2*num2) 
+    {
+        System.Console.WriteLine($"{num1} является квадратом {num2}");
+    }
+    else if(num2==num1*num1)
+    {
+    System.Console.WriteLine($"{num2} является квадратом {num1}");
+    }
+    else
+    {
+        System.Console.WriteLine($"не являются квадратом друг друга");
+    }
+    }
+    SquareNum(num1,num2);
 
 
